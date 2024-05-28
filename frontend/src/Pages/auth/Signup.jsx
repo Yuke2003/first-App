@@ -107,12 +107,14 @@ const SignUpForm = () => {
 
           <div className="mb-4 ">
             <h3 className="text-lg ">role</h3>
-            <input
-              type="text"
-              value={inputs.role}
-              onChange={(e) => setInputs({ ...inputs, role: e.target.value })}
-              className="border-2 border-black p-2 rounded w-96"
-            />
+            <select 
+            className="w-96 border-2 border-black p-2"
+            value={inputs.role}
+              onChange={(e) => setInputs({ ...inputs, role: e.target.value })}>
+              <option value="">Select a role</option>
+              <option value="seller">seller</option>
+              <option value="buyer">buyer</option>
+            </select>
           </div>
          
           <button className="text-center w-96 text-[#f7f7f7] p-2 mt-4 rounded-full bg-[#444]">

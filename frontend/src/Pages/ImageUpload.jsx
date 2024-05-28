@@ -31,7 +31,7 @@ const ImageUpload = () => {
       );
       console.log(res.data);
       // const data = res.data;
-      // setFilename(data);
+      
       setUploadMessage("Upload image succesfully")
     } catch (err) {
       console.log(err.message);
